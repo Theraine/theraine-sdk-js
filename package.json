@@ -1,0 +1,23 @@
+{
+  "name": "theraine-sdk",
+  "version": "1.0.0",
+  "description": "This is the kit for javascript developers. The kit contains program to interact with theraine-contracts on the Ethereum blockchain.",
+  "main": "parent.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "theraine parent": "node parent.js",
+    "theraine platform": "node platform.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Theraine/theraine-sdk-js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Theraine/theraine-sdk-js/issues"
+  },
+  "homepage": "https://github.com/Theraine/theraine-sdk-js#readme"
+}
