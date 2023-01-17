@@ -10,6 +10,17 @@ const contractAddress = "0xE135a1f80Eec74fE3cea8484A2FE1B942762E4C3";
 const contract = new web3.eth.Contract(contractABI, contractAddress);
 const privateKey = '0x' + process.env.PRIVATE_KEY;
 
+console.log(`
+__      __                                     __                     
+/  |    /  |                                   /  |                    
+_$$ |_   $$ |____    ______    ______   ______  $$/  _______    ______  
+/ $$   |  $$      \  /      \  /      \ /      \ /  |/       \  /      \ 
+$$$$$$/   $$$$$$$  |/$$$$$$  |/$$$$$$  |$$$$$$  |$$ |$$$$$$$  |/$$$$$$  |
+$$ | __ $$ |  $$ |$$    $$ |$$ |  $$/ /    $$ |$$ |$$ |  $$ |$$    $$ |
+$$ |/  |$$ |  $$ |$$$$$$$$/ $$ |     /$$$$$$$ |$$ |$$ |  $$ |$$$$$$$$/ 
+$$  $$/ $$ |  $$ |$$       |$$ |     $$    $$ |$$ |$$ |  $$ |$$       |
+ $$$$/  $$/   $$/  $$$$$$$/ $$/       $$$$$$$/ $$/ $$/   $$/  $$$$$$$/ 
+`)
 console.log("Contract Address:", contractAddress);
 
 inquirer

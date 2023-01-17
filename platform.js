@@ -10,6 +10,17 @@ const contractAddress = process.env.CONTRACT_ADDRESS;
 const contract = new web3.eth.Contract(contractABI, contractAddress);
 const privateKey = '0x' + process.env.PRIVATE_KEY;
 
+console.log(`
+__      __                                     __                     
+/  |    /  |                                   /  |                    
+_$$ |_   $$ |____    ______    ______   ______  $$/  _______    ______  
+/ $$   |  $$      \  /      \  /      \ /      \ /  |/       \  /      \ 
+$$$$$$/   $$$$$$$  |/$$$$$$  |/$$$$$$  |$$$$$$  |$$ |$$$$$$$  |/$$$$$$  |
+$$ | __ $$ |  $$ |$$    $$ |$$ |  $$/ /    $$ |$$ |$$ |  $$ |$$    $$ |
+$$ |/  |$$ |  $$ |$$$$$$$$/ $$ |     /$$$$$$$ |$$ |$$ |  $$ |$$$$$$$$/ 
+$$  $$/ $$ |  $$ |$$       |$$ |     $$    $$ |$$ |$$ |  $$ |$$       |
+ $$$$/  $$/   $$/  $$$$$$$/ $$/       $$$$$$$/ $$/ $$/   $$/  $$$$$$$/ 
+`)
 console.log("Contract Address:", contractAddress);
 
 const promptUser = async () => {
