@@ -1,12 +1,14 @@
 import inquirer from 'inquirer';
 import Web3 from "web3";
 import fs from "fs";
+import dotenv from 'dotenv';
+dotenv.config();
 
-const web3 = new Web3("https://goerli.infura.io/v3/4196ca09011945d78096f0cea0b02800");
+const web3 = new Web3(`https://goerli.infura.io/v3/${process.env.INFURA_KEY}`);
 const contractABI = JSON.parse(fs.readFileSync("contracts-abi/PlatformContract.json"));
-const contractAddress = "0xD4eCdBF66f7E92954CcaB32F6248f62ACC4d06de";
+const contractAddress = process.env.CONTRACT_ADDRESS;
 const contract = new web3.eth.Contract(contractABI, contractAddress);
-const privateKey = fs.readFileSync("private-key.txt", "utf8").trim();
+const privateKey = '0x' + process.env.PRIVATE_KEY;
 
 console.log("Contract Address:", contractAddress);
 
@@ -53,7 +55,7 @@ const promptUser = async () => {
             .addPlan(answers.price, answers.duration)
             .send({ from: account.address, gas: 1000000 })
             .on('transactionHash', (hash) => {
-                console.log("Plan removed successfully with transaction hash: ", hash);
+                console.log("Plan added successfully with transaction hash: ", hash);
             })
             .on('error', (err) => {
                 console.log("Error removing plan: ", err);
