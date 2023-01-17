@@ -9,18 +9,23 @@ Follow these process to use this kit:
 git clone https://github.com/Theraine/theraine-sdk-js.git
 ```
 
+Next, copy the `env.sample` file, paste it into the same (root) folder, rename to `.env` and input the keys
+
 - cd into this repository
-```
+```bash
 cd theraine-sdk-js
 ```
 
 - To create a subscription platform on theraine 
-```
+
+```bash
 node parent.js
 ```
+
 <p align="center" width="100%">
  <img src="./docs/parent.png" alt="parent"/>
 </p> 
+
 Copy contract address created when you select `createPlatform`
 
 - Perform operations on the platform subscription created
