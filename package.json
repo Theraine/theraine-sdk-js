@@ -21,6 +21,9 @@
   },
   "homepage": "https://github.com/Theraine/theraine-sdk-js#readme",
   "dependencies": {
-    "dotenv": "^16.0.3"
+    "dotenv": "^16.0.3",
+    "inquirer": "^9.1.4",
+    "web3": "^1.8.1",
+    "fs": "0.0.1-security"
   }
 }
