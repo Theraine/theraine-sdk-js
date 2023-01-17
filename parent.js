@@ -6,7 +6,7 @@ const web3 = new Web3("https://goerli.infura.io/v3/4196ca09011945d78096f0cea0b02
 const contractABI = JSON.parse(fs.readFileSync("contracts-abi/ParentContract.json"));
 const contractAddress = "0xE135a1f80Eec74fE3cea8484A2FE1B942762E4C3";
 const contract = new web3.eth.Contract(contractABI, contractAddress);
-const privateKey = fs.readFileSync("private-key.txt", "utf8").trim();
+const privateKey = '0x' + process.env.PRIVATE_KEY;
 
 console.log("Contract Address:", contractAddress);
 
