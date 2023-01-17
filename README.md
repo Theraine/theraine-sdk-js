@@ -18,8 +18,16 @@ cd theraine-sdk-js
 ```
 node parent.js
 ```
+<p align="center" width="100%">
+ <img src="./docs/parent.png" alt="parent"/>
+</p> 
+Copy contract address created when you select `createPlatform`
 
 - Perform operations on the platform subscription created
 ```
 node platform.js
 ```
+<p align="center" width="100%">
+ <img src="./docs/platform.png" alt="platform"/>
+</p> 
+Select operation to be performed
