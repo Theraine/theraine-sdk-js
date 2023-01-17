@@ -8,6 +8,7 @@ Follow these process to use this kit:
 ```
 git clone https://github.com/Theraine/theraine-sdk-js.git
 ```
+- Run `npm install`
 
 Next, copy the `env.sample` file, paste it into the same (root) folder, rename to `.env` and input the keys
 
