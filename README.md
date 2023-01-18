@@ -27,7 +27,7 @@ node parent.js
  <img src="./docs/parent.png" alt="parent"/>
 </p> 
 
-Copy contract address created when you select `createPlatform`
+Copy the contract address created when you select `createPlatform` to `.env`
 
 - Perform operations on the platform subscription created
 ```
